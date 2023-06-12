@@ -1,0 +1,20 @@
+GET http://localhost:8080/books
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODYxMTE1NDh9.HhW1BCQErxsp5_4q-AQSe8XK0a68jYmYxCy7oveqV-0
+
+###
+
+POST http://localhost:8080/books
+Content-Type: :application/json
+Authorization: Bearer abcdefghijk
+
+{
+    "id":"5",
+    "title":"The Gotfather",
+    "author":"Mario Puzo"
+}
+###
+
+DELETE http://localhost:8080/books/3
+###
+
+POST http://localhost:8080/login
